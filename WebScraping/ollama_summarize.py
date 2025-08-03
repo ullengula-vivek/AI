@@ -46,4 +46,4 @@ def display_summary(url):
     print(summary)
 
 if __name__ == "__main__":
-    display_summary("https://edwarddonner.com")
+    display_summary("https://www.thezennialpro.com/")
