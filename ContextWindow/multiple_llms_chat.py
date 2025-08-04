@@ -44,8 +44,9 @@ def call_claude():
     for gpt, claude in zip(gpt_messages, claude_messages):
         messages.append({"role": "user", "content": gpt})
         messages.append({"role": "assistant", "content": claude})
+        #Adding the additional gpt message
         messages.append({"role": "user", "content": gpt_messages[-1]})
-        response = claude.messsages.create(
+        response = claude.messages.create(
             model=CLAUDE_MODEL,
             system=claude_system_prompt,
             messages=messages,
@@ -64,6 +65,6 @@ for i in range(5):
     claude_next = call_claude()
     print(f"Claude:\n{claude_next}\n")
     claude_messages.append(claude_next)
-    
+
 
 
