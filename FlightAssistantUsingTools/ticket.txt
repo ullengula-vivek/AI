@@ -1,0 +1,6 @@
+
+--- FlightAI Ticket Confirmation ---
+Destination: Dubai
+Date & Time: 2025-10-05 06:30
+Price: ₹22,000
+Status: Confirmed
